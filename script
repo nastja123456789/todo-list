@@ -1,7 +1,7 @@
-// Загрузка данных из localStorage
+// Здесь нужно произвести загрузку данных из localStorage
 let todos = JSON.parse(localStorage.getItem("todos")) || [];
 
-// Обновление списка
+// Здесь должно быть обновление списка
 function renderTodoList() {
     const todolist = document.getElementById('todolist');
     todolist.innerHTML = '';
@@ -19,7 +19,7 @@ function renderTodoList() {
     });
 }
 
-// Добавление элемента
+// Здесь должно быть добавление элемента
 function addElement() {
     const todoInput = document.getElementById('todo-input');
     const todoText = todoInput.value.trim();
@@ -31,7 +31,7 @@ function addElement() {
     }
 }
 
-// Выделение каждого четного элемента
+// Здесь должно быть выделение каждого четного элемента
 function toggleEvenElements() {
     const lis = document.querySelectorAll('li');
     for (let i = 0; i < lis.length; i++) {
@@ -41,7 +41,7 @@ function toggleEvenElements() {
     }
 }
 
-// Выделение каждого нечетного элемента
+// Здесь должно быть выделение каждого нечетного элемента
 function toggleOddElements() {
     const lis = document.querySelectorAll('li');
     for (let i = 0; i < lis.length; i++) {
@@ -51,7 +51,7 @@ function toggleOddElements() {
     }
 }
 
-// Удаление последнего элемента
+// Здесь должно быть удаление последнего элемента
 function deleteLastElement() {
     if (todos.length > 0) {
         todos.pop();
@@ -60,7 +60,7 @@ function deleteLastElement() {
     }
 }
 
-// Удаление первого элемента
+// Здесь должно быть удаление первого элемента
 function deleteFirstElement() {
     if (todos.length > 0) {
         todos.shift();
@@ -69,7 +69,7 @@ function deleteFirstElement() {
     }
 }
 
-// Пометка элемента как завершенного и перемещение в конец списка
+// Здесь должна быть пометка элемента как завершенного и перемещение в конец списка
 function toggleComplete() {
     const lis = document.querySelectorAll('li');
     for (let i = 0; i < lis.length; i++) {
@@ -83,5 +83,5 @@ function toggleComplete() {
     }
 }
 
-// Инициализация списка
+// Здесь должна быть инициализация списка
 renderTodoList();
