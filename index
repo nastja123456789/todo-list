@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDo List</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1>ToDo List</h1>
+<div id="todolist-container">
+    <ul id="todolist"></ul>
+</div>
+<div id="controls-container">
+    <button onclick="toggleEvenElements()">Выделить четные</button>
+    <button onclick="toggleOddElements()">Выделить нечетные</button>
+    <button onclick="deleteLastElement()">Удалить последний</button>
+    <button onclick="deleteFirstElement()">Удалить первый</button>
+    <button onclick="toggleComplete()">Complete</button>
+    <input type="text" id="todo-input">
+    <button onclick="addElement()">Добавить</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
