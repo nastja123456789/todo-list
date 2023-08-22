@@ -1,0 +1,12 @@
+li.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+li.alternate {
+    background-color: #f5f5f5;
+}
+
+button {
+    margin: 5px;
+}
